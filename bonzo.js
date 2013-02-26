@@ -1,4 +1,4 @@
-define(['selector', 'bonzo'], function($, bonzo) {
+define(['amdquery', 'bonzo-lib'], function($, bonzo) {
   bonzo.setQueryEngine($);
 
   var methodObj = {
