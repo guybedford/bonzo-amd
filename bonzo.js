@@ -8,7 +8,7 @@ define(['amdquery', 'bonzo-lib'], function($, bonzo) {
       return this.create(html);
     },
     create: function(node) {
-      return new this.constructor(bonzo.create(node));
+      return new this(bonzo.create(node));
     },
     prototype: {}
   };
