@@ -2,7 +2,7 @@
   "main": "bonzo.js",
   "volo": {
     "dependencies": {
-      "bonzo-lib": "ded/bonzo"
+      "bonzo-lib": "ded/bonzo/master"
     }
   }
 }

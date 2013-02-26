@@ -1,6 +1,8 @@
 define(['amdquery', 'bonzo-lib'], function($, bonzo) {
   bonzo.setQueryEngine($);
 
+  var bonzoInstance = bonzo();
+
   var methodObj = {
     construct: function(html) {
       return this.create(html);
@@ -20,7 +22,7 @@ define(['amdquery', 'bonzo-lib'], function($, bonzo) {
     'insertBefore', 'after', 'insertAfter', 'replaceWith', 'clone', 'css', 'offset', 'dim', 'attr', 'val',
     'data', 'remove', 'empty', 'detach', 'scrollLeft', 'scrollTop', 'children'];
   for (var i = 0; i < methods.length; i++)
-    methodObj.prototype[methods[i]] = bonzo[methods[i]];
+    methodObj.prototype[methods[i]] = bonzoInstance[methods[i]];
 
   return methodObj;
 });
