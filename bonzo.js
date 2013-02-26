@@ -1,3 +1,13 @@
+/*
+ * bonzo.js bridge library for amdquery
+ * https://github.com/guybedford/bonzo-amd
+ *
+ * Bonzo:
+ * https://github.com/ded/bonzo
+ * 
+ * Inspiration - https://github.com/ded/bonzo/blob/master/src/ender.js
+ * 
+ */
 define(['amdquery', 'bonzo-lib'], function($, bonzo) {
   bonzo.setQueryEngine($);
 
